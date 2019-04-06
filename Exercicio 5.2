@@ -1,0 +1,36 @@
+#include <stdio.h>
+int  minhaconta_1;
+int  minhaconta_2;
+int* p;
+
+int compra(int* conta, int valor) {
+    *conta = *conta - valor ;
+}
+
+int main(void) {
+
+  printf("Escolha digite o saldo da conta 1: ");
+  scanf("%d", &minhaconta_1);
+
+  printf("Escolha digite o saldo da conta 2: ");
+  scanf("%d", &minhaconta_2);
+
+  if(minhaconta_1 > minhaconta_2) {
+   p = &minhaconta_1;
+  }
+  else {
+   p = &minhaconta_2;
+  }
+
+  compra(p, 500);
+
+  printf("Saldos: %d, %d\n", minhaconta_1, minhaconta_2);
+   
+  return 0;
+   
+}
+
+
+
+
+
