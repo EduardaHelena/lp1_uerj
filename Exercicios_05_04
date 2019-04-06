@@ -1,0 +1,27 @@
+#include <stdio.h>
+int  numero1;
+int  numero2;
+int* p;
+
+int main(void) {
+  printf("Escolha digite 2 numeros: ");
+  scanf("%d", &numero1);
+  scanf("%d", &numero2);
+  printf("Voce escolheu %d, %d", numero1, numero2);
+  Maior(numero1, numero2)
+  return 0;
+}
+
+int Maior(int a, int b){
+  if(a > b) {
+    p = &a;
+    a = *p - 50;
+  }
+  else {
+    p = &b; 
+    b = *p - 50;
+  }
+  printf("Resultado:  %d, %d", numero1, numero2);
+  
+}
+
