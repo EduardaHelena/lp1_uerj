@@ -15,11 +15,11 @@ int main(void) {
 int Maior(int a, int b){
   if(a > b) {
     p = &a;
-    a = *p - 50;
+    *p = *p - 50;
   }
   else {
     p = &b; 
-    b = *p - 50;
+    *p = *p - 50;
   }
   printf("Resultado:  %d, %d", numero1, numero2);
   
